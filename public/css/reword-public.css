@@ -1,0 +1,64 @@
+/*
+ * Reword icon style.
+ *
+ * Becomes active when hovered or when marking text:
+ * - Font transits to white
+ * - Background transits to red
+ *
+ * Inactive mode:
+ * - Font is black
+ * - Background is gray with opacity
+ */
+
+.reword-icon {
+    z-index: 999999;
+    position: fixed;
+    padding: 10px;
+    font-weight: 700;
+    /* Bold */
+    cursor: pointer;
+}
+
+.reword-icon-active {
+    color: #fff;
+    /* White */
+    background: #ff0000;
+    /* Red */
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.reword-icon-inactive {
+    color: #000;
+    /* Black */
+    background: rgba(0, 0, 0, 0.36);
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+/* Reword icon position class */
+.reword-icon-top {
+    top: 80px;
+}
+
+.reword-icon-bottom {
+    bottom: 80px;
+}
+
+.reword-icon-right {
+    right: 0;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.reword-icon-left {
+    left: 0;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
